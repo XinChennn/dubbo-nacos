@@ -1,0 +1,24 @@
+###############  application.yml是用来写自己独有的配置的
+#  原理: 当服务启动,bootstrap.yml会从服务端获取公共配置,然后配置application.yml的配置
+#  就是当前模块的总配置项!我们编写配置的时候就可以专心在bootstrap中配置远程的了
+
+## application
+dubbo:
+  application:
+    name: dubbo-nacos
+## Nacos registry address
+  registry:
+    address: nacos://127.0.0.1:8848
+
+# 自定义的配置
+demo:
+  name: aaa
+
+##????????????????????2???
+#dubbo.registry.address = nacos://10.20.153.10:8848?namespace=5cbb70a5-xxx-xxx-xxx-d43479ae0932
+#dubbo.registry.parameters.namespace=5cbb70a5-xxx-xxx-xxx-d43479ae0932
+
+#spring:
+#  profiles:
+#    active: dev #表示开发环境
+#    #active: test #表示测试环境

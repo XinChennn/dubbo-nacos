@@ -1,0 +1,12 @@
+## application
+dubbo:
+  application:
+    name: consumer
+  ## Nacos registry address
+  registry:
+    address: nacos://127.0.0.1:8848
+demo:
+  service:
+    name: XinChennn
+server:
+  port: 8082
