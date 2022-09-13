@@ -2,3 +2,5 @@
 /api/target/
 /consumer/target/
 /provider/target/
+
+.idea
